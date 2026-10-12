@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>GoIELTS — نماذج UI/UX التفاعلية</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:'IBM Plex Sans Arabic',Tahoma,Arial,sans-serif;color:#10295b;background:linear-gradient(155deg,#eff3fa 0%,#fafbfe 60%,#f0f3f9 100%)}
+main{width:min(100% - 36px,1000px);margin:70px auto}
+.top{margin-bottom:32px}
+.kicker{font-size:13px;font-weight:600;color:#c8102e;letter-spacing:.4px}
+h1{margin:8px 0 8px;font-size:clamp(25px,4vw,40px);line-height:1.45}
+.subtitle{color:#657590;margin:0;font-size:15px;line-height:1.95}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
+a.card{display:block;text-decoration:none;color:inherit;border:1px solid #d9e2f3;background:#fff;border-radius:16px;padding:26px 25px;box-shadow:0 8px 24px #1437750d;transition:transform .16s,box-shadow .16s}
+a.card:hover{transform:translateY(-3px);box-shadow:0 13px 32px #14377520}
+.tag{display:inline-block;background:#eaf3ee;color:#0f814b;font-size:12px;font-weight:600;border-radius:100px;padding:5px 12px}
+h2{font-size:22px;margin:21px 0 11px;color:#082866}
+.card p{font-size:14px;line-height:1.9;color:#687894;margin:0 0 24px}
+.enter{color:#082e82;font-weight:700;font-size:14px}
+footer{color:#8390a4;font-size:12px;margin-top:28px}
+@media(max-width:560px){main{margin:38px auto}.grid{gap:12px}a.card{padding:22px}}
+</style>
+</head>
+<body>
+<main>
+  <div class="top">
+    <div class="kicker">GoIELTS · Product Design</div>
+    <h1>النماذج التفاعلية</h1>
+    <p class="subtitle">نماذج UI/UX للمراجعة وتجربة سلوك الواجهات قبل اعتماد التطوير.</p>
+  </div>
+  <div class="grid">
+    <a class="card" href="./goielts/renewal-banner/" aria-label="افتح النموذج المعتمد لتنبيه تجديد الاشتراك">
+      <span class="tag">النموذج المعتمد · v6</span>
+      <h2>تنبيه تجديد الاشتراك</h2>
+      <p>تجربة تفاعلية بحالات ما قبل الانتهاء وبعده، وثلاث حالات للطالب، على الكمبيوتر والجوال.</p>
+      <span class="enter">افتح البروتوتايب ←</span>
+    </a>
+  </div>
+  <footer>النماذج للعرض والتجربة فقط ولا تُجري أي مدفوعات فعلية.</footer>
+</main>
+</body>
+</html>
